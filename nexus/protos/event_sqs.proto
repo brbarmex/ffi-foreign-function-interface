@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package protos;
+
+option go_package = "fii/protos";
+
+message SQSMessage {
+  string id = 1;
+  string messageBody = 2;
+  string receiptHandle = 3;
+  string queueUrl = 4;
+  int64 timestamp = 5;
+}
+
+message SQSMessageList {
+  repeated SQSMessage messages = 1;
+}
