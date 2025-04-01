@@ -1,0 +1,70 @@
+
+# Compilados e bytecode
+*.class
+*.jar
+*.war
+*.ear
+*.jmod
+
+# Pastas geradas pelo build
+bin/
+target/
+out/
+
+# Configurações de IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.project
+.classpath
+.settings/
+
+# Logs e cache
+*.log
+.mvn/
+.gradle/
+build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Build e pacotes
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.nuget
+*.nupkg
+
+# Configurações de IDEs
+*.user
+*.suo
+*.sln.cache
+*.csproj.user
+*.vs/
+
+# Debug e logs
+*.log
+*.tlog
+*.cache
+
+# Binários compilados
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# Módulos e dependências
+vendor/
+bin/
+pkg/
+*.a
+
+# Configuração do Go
+go.sum
+go.work
+go.work.sum

@@ -1,4 +1,4 @@
-module fii
+module cloudsdk
 
 go 1.23.0
 

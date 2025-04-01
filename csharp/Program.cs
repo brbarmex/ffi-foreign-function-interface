@@ -5,6 +5,13 @@ using Protos; // Importa o pacote gerado do Protobuf
 
 class Program
 {
+    // Importa as funções do Go
+    [DllImport("cloudsdk.so", CallingConvention = CallingConvention.Cdecl)]
+    public static extern int GetSQSEvents(out IntPtr output, out int outputLen);
+
+    [DllImport("cloudsdk.so", CallingConvention = CallingConvention.Cdecl)]
+    public static extern void FreeMemory(IntPtr ptr);
+
     static void Main()
     {
         // Variáveis para armazenar a resposta da função Go
@@ -12,7 +19,7 @@ class Program
         int outputLen;
 
         // Chamar a função Go para obter os eventos SQS
-        int result = NexusCloud.GetSQSEvents(out outputPtr, out outputLen);
+        int result = GetSQSEvents(out outputPtr, out outputLen);
 
         if (result == 0)
         {
@@ -21,16 +28,16 @@ class Program
             Marshal.Copy(outputPtr, outputData, 0, outputLen);
 
             // Desserializar os eventos SQS
-            SQSMessageList eventsList = SQSMessageList.Parser.ParseFrom(outputData);
+            MessageQueueList eventsList = MessageQueueList.Parser.ParseFrom(outputData);
 
             // Exibir os eventos
             foreach (var eventItem in eventsList.Messages)
             {
-                Console.WriteLine($"ID: {eventItem.Id}, Message: {eventItem.MessageBody}");
+                 Console.WriteLine($"ID: {eventItem.Id}, Mensagem: {eventItem.MessageBody}, Provedor: {eventItem.Provider}");
             }
 
             // Liberar a memória alocada pelo Go
-            NexusCloud.FreeMemory(outputPtr);
+            FreeMemory(outputPtr);
         }
         else
         {

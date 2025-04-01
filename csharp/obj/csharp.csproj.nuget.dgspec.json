@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/wakuba/workspace/fii-poc/csharp/csharp.csproj": {}
+    "/Users/wakuba/workspace/fii-poc/ffi-foreign-function-interface/csharp/csharp.csproj": {}
   },
   "projects": {
-    "/Users/wakuba/workspace/fii-poc/csharp/csharp.csproj": {
+    "/Users/wakuba/workspace/fii-poc/ffi-foreign-function-interface/csharp/csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/wakuba/workspace/fii-poc/csharp/csharp.csproj",
+        "projectUniqueName": "/Users/wakuba/workspace/fii-poc/ffi-foreign-function-interface/csharp/csharp.csproj",
         "projectName": "csharp",
-        "projectPath": "/Users/wakuba/workspace/fii-poc/csharp/csharp.csproj",
+        "projectPath": "/Users/wakuba/workspace/fii-poc/ffi-foreign-function-interface/csharp/csharp.csproj",
         "packagesPath": "/Users/wakuba/.nuget/packages/",
-        "outputPath": "/Users/wakuba/workspace/fii-poc/csharp/obj/",
+        "outputPath": "/Users/wakuba/workspace/fii-poc/ffi-foreign-function-interface/csharp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/wakuba/.nuget/NuGet/NuGet.Config"

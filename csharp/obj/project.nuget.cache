@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wx2askxJA3TDrS3uE9NGulntDCQ3JNmBZHzid8AUNg94oa7Ua6u70ti9r07IL6zZLpgTZ4Am7JMnvnxNDa4f5g==",
+  "dgSpecHash": "d4ja0tdVW/IwC8DNmsB+EIF7TK5PQ3xpNCa0Qbu5ReI2murQgMQOuwBo8f1nUYbY6gShURM5gzRgh6rbMfUXhg==",
   "success": true,
-  "projectFilePath": "/Users/wakuba/workspace/fii-poc/csharp/csharp.csproj",
+  "projectFilePath": "/Users/wakuba/workspace/fii-poc/ffi-foreign-function-interface/csharp/csharp.csproj",
   "expectedPackageFiles": [
     "/Users/wakuba/.nuget/packages/google.protobuf/3.30.2/google.protobuf.3.30.2.nupkg.sha512"
   ],

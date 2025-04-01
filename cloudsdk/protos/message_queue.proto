@@ -2,16 +2,17 @@ syntax = "proto3";
 
 package protos;
 
-option go_package = "fii/protos";
+option go_package = "cloudsdk/protos";
 
-message SQSMessage {
+message MessageQueue {
   string id = 1;
   string messageBody = 2;
   string receiptHandle = 3;
   string queueUrl = 4;
   int64 timestamp = 5;
+  string provider = 6;
 }
 
-message SQSMessageList {
-  repeated SQSMessage messages = 1;
+message MessageQueueList {
+  repeated MessageQueue messages = 1;
 }
