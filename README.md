@@ -10,17 +10,17 @@ Para saber mais sobre FFI, [clique aqui]()
 
 Testar se o conceito de interoperabilidade atende aos seguintes requisitos:
 
-##Codebase único e reutilizável:## Manter um único código-fonte que possa ser reutilizado em diversas linguagens de programação.
+**Codebase único e reutilizável:** Manter um único código-fonte que possa ser reutilizado em diversas linguagens de programação.
 
-##Agnóstico:## O código deve ser capaz de integrar-se tanto com AWS quanto com Azure, sem dependência específica de um provedor de nuvem.
+**Agnóstico:** O código deve ser capaz de integrar-se tanto com AWS quanto com Azure, sem dependência específica de um provedor de nuvem.
 
-##Baixa latência:## Garantir que as operações realizadas por meio da interoperabilidade apresentem tempo de resposta mínimo.
+**Baixa latência:** Garantir que as operações realizadas por meio da interoperabilidade apresentem tempo de resposta mínimo.
 
-##Facilidade de reutilização##: Tornar o código simples de reutilizar em diferentes contextos e aplicações.
+**Facilidade de reutilização**: Tornar o código simples de reutilizar em diferentes contextos e aplicações.
 
-##Alta performance:## As interações entre diferentes linguagens e a nuvem devem ser eficientes em termos de recursos e processamento.
+**Alta performance:** As interações entre diferentes linguagens e a nuvem devem ser eficientes em termos de recursos e processamento.
 
-##Facilidade de uso:## A integração deve ser intuitiva e simples, permitindo que desenvolvedores de diferentes áreas possam utilizar sem complexidade.
+**Facilidade de uso:** A integração deve ser intuitiva e simples, permitindo que desenvolvedores de diferentes áreas possam utilizar sem complexidade.
 
 # Proposta de solução
 
