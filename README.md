@@ -44,15 +44,15 @@ Para saber mais sobre FFI, [clique aqui]()
 
 **Contras:**
 
-    - **Integração entre linguagens:** A integração de entre diferentes linguagens pode ser complexa e exigir um esforço significativo (ainda mais de como será utilizado), como o uso de JNI(sofrivel em Java, porém, mais flexivel quando se utiliza JNA), que pode ser difícil de configurar corretamente em comparação com C# ou Python, onde a integração foi mais simples.
+   - **Integração entre linguagens:** A integração de entre diferentes linguagens pode ser complexa e exigir um esforço significativo (ainda mais de como será utilizado), como o uso de JNI(sofrivel em Java, porém, mais flexivel quando se utiliza JNA), que pode ser difícil de configurar corretamente em comparação com C# ou Python, onde a integração foi mais simples.
     
-    - **Gerenciamento de memoria:** O gerenciamento de memoria pode ser um desafio, por exemplo, no C# e no python eu notei que funcionou bem, mas no Java eu percebi que em algum momento o objeto retornado pelo pacote foi descartado (não analisei com profundidade) e esse tipo de comportamento me chamou a atenção, a solução paliativa foi implementar uma função do lado do GO para ser chamada quando houver necessidade de desalocar a memoria (aqui ja temos uma mistrura de conceitos estaticos, onde eu entrego um controle sob um objetco de uma linguagem staticamente gerenciada)
+   - **Gerenciamento de memoria:** O gerenciamento de memoria pode ser um desafio, por exemplo, no C# e no python eu notei que funcionou bem, mas no Java eu percebi que em algum momento o objeto retornado pelo pacote foi descartado (não analisei com profundidade) e esse tipo de comportamento me chamou a atenção, a solução paliativa foi implementar uma função do lado do GO para ser chamada quando houver necessidade de desalocar a memoria (aqui ja temos uma mistrura de conceitos estaticos, onde eu entrego um controle sob um objetco de uma linguagem staticamente gerenciada)
   
-    - **Tipagem:** Por mais que declaremos um tipo Protobuf no projeto em GO; java e C# sempre irão esperar um []bytes o que faz perder a visibilidade do retorno e o poder da tipagem.
+   - **Tipagem:** Por mais que declaremos um tipo Protobuf no projeto em GO; java e C# sempre irão esperar um []bytes o que faz perder a visibilidade do retorno e o poder da tipagem.
 
-    - **Alocação de memória no C:** Se a função nativa precisar alocar memória para os dados (como buffers ou estruturas), e a linguagem hospedeira (como Java ou C#) precisar limpar essa memória depois de usá-la, isso pode gerar overhead adicional, pois o gerenciamento de memória entre as linguagens pode ser complexo e propenso a erros.
+   - **Alocação de memória no C:** Se a função nativa precisar alocar memória para os dados (como buffers ou estruturas), e a linguagem hospedeira (como Java ou C#) precisar limpar essa memória depois de usá-la, isso pode gerar overhead adicional, pois o gerenciamento de memória entre as linguagens pode ser complexo e propenso a erros.
 
-    - **Uso de C:** Precisamente precisaremos utilizar a linguagem C em GO para alguma coisa
+   - **Uso de C:** Precisamente precisaremos utilizar a linguagem C em GO para alguma coisa
 
 **Prós**:
    - **Reuso de Código Centralizado**
