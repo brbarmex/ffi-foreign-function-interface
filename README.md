@@ -34,6 +34,13 @@ Para saber mais sobre FFI, [clique aqui]()
 
 ![proposta](./doc/ffi.drawio.png)
 
+### Exemplo de uso
+
+**Cenário 1:** Implementar uma função que consumirá eventos de filas de mensageria da Azure ou AWS. O provedor será escolhido em tempo de execução com base no valor da variável de ambiente "cloudsdk_provider". A coleção de eventos deverá ser serializada utilizando Protobuf e retornada ao chamador de forma eficiente.
+
+![case](./doc/flow-get-event.drawio.png)
+
+
 
 
 
