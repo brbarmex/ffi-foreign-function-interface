@@ -24,12 +24,13 @@ Com FFI podemos reaproveitar bibliotecas existentes e facilitar a interoperabili
 
 Para saber mais sobre FFI, [clique aqui]()
 
-#### Para esta prova de conceito utilizaremos as seguintes stacks:
+**Para esta prova de conceito, utilizaremos as seguintes tecnologias:**
 
-**GO:** Usaremos a linguagem Golang para desenvolver o modulo que implementarará funcionaliddes da cloud (aws e azure) e expor o contrato que será utilizado entre outras linguagens.
-**Protobuf:** Usaremos o protocolo **protobuf** para serelização dos dados entre componentes.
-**Java/Ssharp/Python:** Criaremos um exemplo que importará o pacote feito em GO.
+**GO:** A linguagem Go será utilizada para desenvolver o módulo que implementará as funcionalidades da nuvem (AWS e Azure) e exporá os contratos que serão utilizados por outras linguagens.
 
+**Protobuf:** O protocolo Protobuf será adotado para serialização dos dados entre os componentes, garantindo uma comunicação eficiente e compacta.
+
+**Java/C#/Python:** Será criado um exemplo para importar e utilizar o pacote desenvolvido em Go, demonstrando como as diferentes linguagens podem interagir com o módulo Go via FFI (Foreign Function Interface).
 
 ![proposta](./doc/ffi.drawio.png)
 
